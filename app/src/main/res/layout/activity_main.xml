@@ -84,17 +84,59 @@
         app:layout_constraintStart_toEndOf="@+id/btnMulti" />
 
     <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="151dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:text="TextView"
-        android:textSize="27sp"
+        android:id="@+id/tvSubtract"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="88dp"
+        android:text="Result"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMulti"
+        app:layout_constraintEnd_toStartOf="@+id/btnModulus"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinus"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/tvAddition"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
+        android:text="Result"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSubtract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSum"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/tvMultiply"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        android:text="Result"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvModulus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvModulus"
+        android:layout_width="82dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="68dp"
+        android:text="Result"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
+        app:layout_constraintTop_toBottomOf="@+id/btnModulus"
+        app:layout_constraintVertical_bias="0.216" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,17 +13,23 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnModulus:Button
     lateinit var etNum1: EditText
     lateinit var etNum2: EditText
-    lateinit var tvResult: TextView
+    lateinit var tvSubtract: TextView
+    lateinit var tvAddition:TextView
+    lateinit var tvMultiply:TextView
+    lateinit var tvModulus:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       btnSum=findViewById(R.id.btnSum)
+        btnSum=findViewById(R.id.btnSum)
         btnMinus=findViewById(R.id.btnMinus)
         btnMulti=findViewById(R.id.btnMulti)
         btnModulus=findViewById(R.id.btnModulus)
         etNum1=findViewById(R.id.etNum1)
         etNum2=findViewById(R.id.etNum2)
-        tvResult=findViewById(R.id.tvResult)
+        tvSubtract=findViewById(R.id.tvSubtract)
+        tvAddition=findViewById(R.id.tvAddition)
+        tvMultiply=findViewById(R.id.tvMultiply)
+        tvModulus=findViewById(R.id.tvModulus)
 
         btnSum.setOnClickListener {
             var num1=etNum1.text.toString().toInt()
@@ -48,22 +54,22 @@ class MainActivity : AppCompatActivity() {
     }
     fun calculateModulus(num1: Int, num2: Int) {
      var modulus=num1%num2
-        tvResult.text=modulus.toString()
+        tvModulus.text=modulus.toString()
     }
 
     fun calculateMultiplication(num1: Int, num2: Int) {
        var multiplicatiuon=num1*num2
-        tvResult.text=multiplicatiuon.toString()
+        tvMultiply.text=multiplicatiuon.toString()
     }
 
     fun calculateMinus(num1: Int, num2: Int) {
       var minus=num1-num2
-        tvResult.text=minus.toString()
+        tvSubtract.text=minus.toString()
     }
 
     fun calculateSum(num1:Int,num2:Int){
        var sum=num1+num2
-        tvResult.text=sum.toString()
+        tvAddition.text=sum.toString()
 
     }
 
